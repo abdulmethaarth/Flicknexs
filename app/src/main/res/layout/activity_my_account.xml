@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context=".MyAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            layout_height="?actionBarSize"
+            layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    >
+                    <TextView
+                        android:id="@+id/videotitle"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:text="My Account"
+                        android:fontFamily="@font/opensbold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_weight="2"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/edit"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/image"
+           android:layout_width="match_parent"
+           android:layout_height="65dp"
+           android:layout_gravity="center"
+           android:src="@drawable/avatar"/>
+
+            <TextView
+
+                android:id="@+id/username"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="User Name"
+                android:fontFamily="@font/opensbold1"
+                android:textColor="#e7e8ea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/useremail"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="User Email"
+                android:fontFamily="@font/opensbold"
+                android:textColor="#686a6b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subscriber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="MEMBERSHIP"
+                    android:textColor="#959a9a"
+                    android:fontFamily="@font/opensbold1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:id="@+id/subscribe"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#222425"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="14dp"
+                            android:text="Premium Annual \u20B9 999/Year"
+                            android:layout_width="match_parent"
+                            android:textColor="#e7e8ea"
+                            android:fontFamily="@font/opensbold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/nextBilling"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/opensans"
+                            android:textColor="#686a6b"
+                            android:text="Next Billing Date:05 jan 2021"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/cancelpayment"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.5"
+                            android:padding="18dp"
+                            android:fontFamily="@font/opensans"
+                            android:text="Cancel Membership"
+                            android:textColor="#f2f2f2"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_weight="4"
+                            android:layout_gravity="left"
+                            android:src="@drawable/backright"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="MEMBERSHIP"
+                    android:textColor="#959a9a"
+                    android:fontFamily="@font/opensbold1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:id="@+id/nonsubscribe"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#222425"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:text="Get More Videos And Audios"
+                        android:layout_width="match_parent"
+                        android:textColor="#e7e8ea"
+                        android:fontFamily="@font/opensbold"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:fontFamily="@font/opensans"
+                        android:textColor="#686a6b"
+                        android:text="With Yearly and Monthly Plans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                        <Button
+                            android:id="@+id/getsubscription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/buttonbackgroun"
+                            android:gravity="center"
+                            android:text="Get Subscription"
+                            android:fontFamily="@font/opensbold"
+                            android:textSize="19dp"
+                            android:textAllCaps="false"
+                            android:textColor="#e7e8ea" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="ACCOUNT AND SECURITY"
+                    android:textColor="#959a9a"
+                    android:fontFamily="@font/opensbold1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#222425"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/changepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="14dp"
+                            android:text="Change Password"
+                            android:layout_width="match_parent"
+                            android:textColor="#e7e8ea"
+                            android:fontFamily="@font/opens"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                    <LinearLayout
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="14dp"
+                            android:text="Log out"
+                            android:layout_width="match_parent"
+                            android:textColor="#e7e8ea"
+                            android:fontFamily="@font/opens"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+        </ScrollView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.BottomNavigationView
+                    android:id="@+id/navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelVisibilityMode="labeled"
+                    android:layout_gravity="bottom"
+                    app:itemTextColor="@drawable/bottom_navigation_selector1"
+                    android:layout_alignParentBottom="true"
+                    app:itemIconTint="@drawable/bottom_navigation_selector1"
+                    android:theme="@style/Widget.BottomNavigationView14"
+                    android:background="#101010"
+                    app:menu="@menu/navigation"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="55dp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <include layout="@layout/media"
+                        android:id="@+id/includelayout1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

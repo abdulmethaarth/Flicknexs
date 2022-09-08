@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ForgotVerificationActivity"
+    android:orientation="vertical">
+
+    <android:android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        layout_height="?actionBarSize"
+        layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/opensbold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title" />
+
+    </android:android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#e7e8ea"
+                android:fontFamily="@font/opensans"
+                android:text="Enter your Verification Code"/>
+
+
+            <EditText
+                android:id="@+id/verifycode"
+                android:background="@drawable/edittextstyle"
+                android:layout_width="match_parent"
+                android:hint="@string/verification"
+                android:textColor="@color/editextcolor"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/opensans"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#848587"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/opensans"
+                        android:textColor="#e7e8ea"
+                        android:text="Enter Your New Password"/>
+
+
+                    <EditText
+                        android:id="@+id/password1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittextstyle"
+                        android:hint="@string/newpass"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/editextcolor"
+                        android:fontFamily="@font/opensans"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="#848587"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="8dp"
+                        android:inputType="textPassword"
+                        android:shadowColor="#B8B8B8" />
+
+                 <!--   <EditText
+                        android:id="@+id/confirmpassword1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/edittextstyle"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="8dp"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:shadowRadius="2"/>-->
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="50dp"
+                        android:fontFamily="@font/opensbold"
+                        android:paddingRight="50dp"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/buttonbackgroun"
+                        android:gravity="center|center_horizontal"
+                        android:text="Reset Password"
+                        android:textAllCaps="false"
+                        android:textSize="19dp"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

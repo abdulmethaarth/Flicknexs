@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SearchActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_height="35dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittextstyle"
+                />
+            <ImageView
+                android:id="@+id/spinner_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/downarrow"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+            <EditText
+                android:id="@+id/searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextstyle"
+                android:fontFamily="@font/opensans"
+                android:hint="@string/search"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/editextcolor"
+                android:textColorHint="#848587" />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/searchprogress"
+            android:layout_width="35dp"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_alignTop="@id/searchtext"
+            android:layout_alignBottom="@id/searchtext"
+            android:layout_alignEnd="@id/searchtext"
+            android:layout_height="match_parent"
+            />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:textColor="@color/editextcolor"
+            android:fontFamily="@font/opensans"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColorHint="#848587"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"/>
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cross"/>
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/searchnamelayout"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:id="@+id/searchnamedetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Top Categories"
+                    android:fontFamily="@font/opensbold1"/>
+
+            <LinearLayout
+                android:layout_marginTop="11dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/movies"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Videos"
+                    android:fontFamily="@font/opens"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/videos"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Audios"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/opens"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Genre"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/opensbold1"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/genrerecycler"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/detailslayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/opensbold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/storecat"/>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/searchdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelVisibilityMode="labeled"
+                android:layout_gravity="bottom"
+                app:itemTextColor="@drawable/bottom_navigation_selector1"
+                android:layout_alignParentBottom="true"
+                app:itemIconTint="@drawable/bottom_navigation_selector1"
+                android:theme="@style/Widget.BottomNavigationView14"
+                android:background="#101010"
+                app:menu="@menu/navigation"/>
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+</LinearLayout>

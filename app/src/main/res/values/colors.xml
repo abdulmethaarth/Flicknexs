@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e7e8ea</color>
+    <color name="colorPrimaryDark">#111</color>
+    <color name="colorAccent">#3daae0</color>
+    <color name="white">#e7e8ea</color>
+    <color name="silver">#686a6b</color>
+    <color name="editextcolor">#848587</color>
+    <color name="white1">#FFFF</color>
+    <color name="appcolor">#a10a0a</color>
+</resources>

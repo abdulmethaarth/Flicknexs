@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Flicknexs</string>
+    <string name="publishablekey">pk_test_ZdcaAwXuQQnlkRBldK3w3jAH00Jvg4af8K</string>
+    <!--<string name="publishablekey">pk_test_ZdcaAwXuQQnlkRBldK3w3jAH00Jvg4af8K</string>-->
+    <string name="username"><font size="13">UserName</font></string>
+    <string name="password"><font size="13">Password</font></string>
+    <string name="Confirm_Password"><font size="13">Confirm Password</font></string>
+    <string name="Email"><font size="13">E-mail</font></string>
+    <string name="verification"><font size="13">Verification Code</font></string>
+    <string name="fogotemail"><font size="13">E-Mail ID</font></string>
+    <string name="oldpass"><font size="13">Old Password</font></string>
+    <string name="newpass"><font size="13">New Password</font></string>
+    <string name="confirmnewpass"><font size="13">Confirm New Password</font></string>
+    <string name="cardholder"><font size="13">Card Holder Name</font></string>
+    <string name="name"><font size="13">Name</font></string>
+    <string name="mobile"><font size="13">Mobile </font></string>
+    <string name="search"><font size="13">Search</font></string>
+    <string name="image_url">http://flicknexs.webnexs.org/content/uploads/images/</string>
+    <string name="image_genre">http://flicknexs.webnexs.org/content/uploads/genres/</string>
+    <string name="image_albums">http://flicknexs.webnexs.org/content/uploads/albums/</string>
+    <string name="image_avatar">http://flicknexs.webnexs.org/content/uploads/avatars/</string>
+    <string name="facebook_application_id">601441740773044</string>
+    <string name="fb_login_protocol_scheme">fb601441740773044</string>
+</resources>
