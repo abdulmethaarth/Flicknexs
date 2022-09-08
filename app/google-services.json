@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "514699267736",
+    "firebase_url": "https://my-project-1584450160022.firebaseio.com",
+    "project_id": "my-project-1584450160022",
+    "storage_bucket": "my-project-1584450160022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514699267736:android:eda7f950a68dae4ee48aed",
+        "android_client_info": {
+          "package_name": "com.webnexs.flicknexs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514699267736-9p52vqtof7hl6di4kje7nia0tmkalrgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_ULrFKjlL-NUnOLmdH-KW-_Yqdh-u3GY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514699267736-1k8mna8trd0i4arbmmeerd8sd4ulroqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
